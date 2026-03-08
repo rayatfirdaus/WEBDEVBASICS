@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/Demo/Design/Style.css">
+    <script src="/Demo/Javascript/Script.js"></script>
+</head>
+<body>
+    <header>
+        <!-- <div class="container"> -->
+        <h1>Contact us</h1>
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        <label for="fname">FIRST NAME</label><br>
+                        <input type="text" id="fName" name="fname" onchange="return collect_fname()">
+                        <p id="nameError"></p>
+                    </td> 
+                    <td>
+                        <label for="lname">LAST NAME</label><br>
+                        <input type="text" id="lName" name="lname" onchange="return collect_lname()">
+                        <p id="lnameError"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">EMAIL</label> <br>
+                        <input type="email" id="Email" name="email" onchange="return collect_email()">
+                        <p id="emailError"></p>
+                    </td>
+                    <td>
+                        <label for="phonenumber">PHONE NUMBER</label><br>
+                        <input type="text" id="phoneNumber" name="phonenumber" onchange="return collect_pnumber()">
+                        <p id="pnumberError"></p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="tarea">WHAT DO YOU HAVE IN MIND</label><br>
+                        <textarea name="tarea" id="tArea" onchange="return collect_data()"></textarea>
+                        <p id="dataError"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" id="submitBtn">Submit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- </div> -->
+</header>
+</body>
+</html>
