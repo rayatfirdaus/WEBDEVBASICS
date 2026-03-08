@@ -19,4 +19,3 @@ const x = null;
 const y = undefined;
 //const z;
 console.log(typeof name1);
- 
